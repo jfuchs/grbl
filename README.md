@@ -78,3 +78,30 @@ List of Supported G-Codes in Grbl v1.1:
   - Spindle Control: M3, M4, M5
   - Valid Non-Command Words: F, I, J, K, L, N, P, R, S, T, X, Y, Z
 ```
+
+# Jon's notes
+
+## To install
+
+1. clone this repo into ~/wherever
+2. symlink the grbl folder into your Arduino libraries folder
+3. open the grblUpload.ino sketch in the Arduino IDE
+4. Run it
+5. Reset the EEPROM to defaults by sending `$RST=*`
+
+- dimensions: 1139 x 798
+- x positive: rightward
+- y positive: downward
+- x limit: right side
+- y limit: bottom side
+- so after homing, mPos will be 0,0 and wPos should be 1138,797
+
+```
+G54
+G10 L20 P0 X-1 Y1
+```
+
+## TODO:
+
+- set feed rate on boot
+- raise pen on boot
