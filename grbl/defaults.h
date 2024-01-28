@@ -599,7 +599,7 @@
   #define DEFAULT_INVERT_PROBE_PIN 0 // // $6
   #define DEFAULT_LASER_MODE 0 // $32
   #define DEFAULT_HOMING_ENABLE 1 // $22
-  #define DEFAULT_HOMING_DIR_MASK ((1<<X_AXIS)|(1<<Y_AXIS)) // $23
+  #define DEFAULT_HOMING_DIR_MASK 0 // $23
   #define DEFAULT_HOMING_FEED_RATE 10000.0 // mm/min // $24
   #define DEFAULT_HOMING_SEEK_RATE 10000.0 // mm/min // $25
   #define DEFAULT_HOMING_DEBOUNCE_DELAY 25 // msec (0-65k) // $26
